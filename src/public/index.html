@@ -2,8 +2,74 @@
 <html>
 <head>
   <title>prueba backend</title>
+  <style>
+  * {
+    font-family: monospace;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: .625rem;
+  }
+  a {
+    color: inherit;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+  ul.routes {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 2rem;
+  }
+  ul.routes>li.route {
+    display: flex;
+    place-items: center;
+    font-size: 2rem;
+  }
+  ul.routes>li.route>p.method {
+    margin-right: 1rem;
+    padding: 0 1rem .4rem;
+
+    background: #bbb;
+    border-radius: .6rem;
+    font-weight: bold;
+
+    display: flex;
+  }
+  ul.routes>li.route>.link {
+    display: block;
+    padding: 0 1rem .4rem;
+
+    background: #eee;
+    border-radius: .6rem;
+  }
+  </style>
 </head>
 <body>
-  <h1>Backend</h1>
+  <h1>metodos y rutas para el backend</h1>
+  <ul class="routes">
+    <li class="route">
+      <p class="method">get</p>
+      <a href="/users" class="link">/users</a>
+    </li>
+    <li class="route">
+      <p class="method">get</p>
+      <p class="link">/user/:id</p>
+    </li>
+    <li class="route">
+      <p class="method">post</p>
+      <p class="link">/user</p>
+    </li>
+    <li class="route">
+      <p class="method">put</p>
+      <p class="link">/user/:id</p>
+    </li>
+    <li class="route">
+      <p class="method">delete</p>
+      <p class="link">/user/:id</p>
+    </li>
+  </ul>
 </body>
 </html>
